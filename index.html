@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Content</title>
+    <title>Protected Image</title>
     <script>
         function checkPassword() {
             var password = document.getElementById("password").value;
@@ -27,11 +27,17 @@
             display: none;
             margin-top: 20px;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
-    <h2>Enter Password to View Content</h2>
+    <h2>Enter Password to View the Image</h2>
     
     <div id="passwordForm">
         <input type="password" id="password" placeholder="Enter password">
@@ -39,8 +45,8 @@
     </div>
 
     <div id="content">
-        <h3>Secret Message</h3>
-        <p>This is your hidden content! 🎉</p>
+        <h3>Secret Image</h3>
+        <img src="https://yourwebsite.com/secret.jpg" alt="Hidden Image"> <!-- Replace with your image URL -->
     </div>
 
 </body>
